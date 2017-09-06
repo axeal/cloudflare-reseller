@@ -159,7 +159,7 @@ describe('cloudflare-reseller', function() {
                 cloudflare.call('zone_full_set', {
                     'act': 'full_zone_set',
                     'zone_name': 'error',
-                    'user_key': '11111111111111111111111111111111',
+                    'user_key': '11111111111111111111111111111111'
                 }, function(err) {
                     expect(err instanceof Error).to.be.true;
                     done();
