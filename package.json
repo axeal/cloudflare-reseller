@@ -1,0 +1,42 @@
+{
+  "name": "cloudflare-reseller",
+  "version": "1.0.0",
+  "description": "Cloudflare Reseller API client.",
+  "main": "lib/cloudflare-reseller.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axeal/cloudflare-reseller.git"
+  },
+  "author": "Alex Seymour (https://github.com/axeal)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/axeal/cloudflare-reseller/issues"
+  },
+  "homepage": "https://github.com/axeal/cloudlfare-reseller#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.8",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "~2.1.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-mocha": "~3.0.1",
+    "lodash": "^4.17.4",
+    "mocha": "^3.4.2",
+    "nock": "^9.0.14",
+    "rimraf": "^2.6.1",
+    "run-sequence": "^2.1.0"
+  }
+}

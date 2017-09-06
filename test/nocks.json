@@ -1,0 +1,156 @@
+[
+  {
+    "scope": "https://api.cloudflare.com",
+    "method": "POST",
+    "path": "/host-gw.html",
+    "body": {
+      "act": "user_create",
+      "host_key": "testkey",
+      "cloudflare_email": "test@example.com",
+      "cloudflare_pass": "test",
+      "unique_id": "1"
+    },
+    "status": 200,
+    "response": {
+      "request": {
+        "act": "user_create"
+      },
+      "response": {
+        "cloudflare_email": "test@example.com",
+        "user_key": "11111111111111111111111111111111",
+        "unique_id": "1",
+        "user_api_key": "1111111111111111111111111111111111111"
+      },
+      "result": "success",
+      "msg": null
+    }
+  },
+  {
+    "scope": "https://api.cloudflare.com",
+    "method": "POST",
+    "path": "/host-gw.html",
+    "body": {
+      "act": "user_create",
+      "host_key": "testkey",
+      "cloudflare_email": "test2@example.com",
+      "cloudflare_pass": "test",
+      "unique_id": "1"
+    },
+    "status": 200,
+    "response": {
+      "request": {
+        "act": "user_create"
+      },
+      "response": {
+        "cloudflare_email": "test2@example.com",
+        "user_key": "11111111111111111111111111111111",
+        "unique_id": "1",
+        "user_api_key": "1111111111111111111111111111111111111"
+      },
+      "result": "success",
+      "msg": null
+    }
+  },
+  {
+    "scope": "https://api.cloudflare.com",
+    "method": "POST",
+    "path": "/host-gw.html",
+    "body": {
+      "act": "reseller_sub_list",
+      "host_key": "testkey"
+    },
+    "status": 200,
+    "response": {
+      "request": {
+          "act": "reseller_sub_list"
+      },
+      "response": {
+          "objs": [{
+              "zone_name": "example1.com",
+              "sub_id": "1",
+              "sub_status": "V",
+              "sub_name": "Cloudflare Plan Plus",
+              "sub_price": "5.00",
+              "sub_priced_on": "2012-07-18 18:35:54.050883-05",
+              "sub_canceled_on": null,
+              "sub_expires_on": null,
+              "sub_expired_on": null,
+              "sub_renewed_on": "2013-03-18 17:35:54.051223-05",
+              "sub_activated_on": "2012-07-18 18:35:54.050883-05",
+              "edate": "2012-07-18 18:46:29.232158-05",
+              "cdate": "2012-07-18 18:35:54.050883-05"
+              }]
+      },
+      "result": "success",
+      "msg": null
+    }
+  },
+  {
+    "scope": "https://api.cloudflare.com",
+    "method": "POST",
+    "path": "/host-gw.html",
+    "body": {
+      "act": "reseller_sub_list",
+      "host_key": "testkey"
+    },
+    "status": 200,
+    "response": {
+      "request": {
+          "act": "reseller_sub_list"
+      },
+      "response": {
+          "objs": [{
+              "zone_name": "example1.com",
+              "sub_id": "1",
+              "sub_status": "V",
+              "sub_name": "Cloudflare Plan Plus",
+              "sub_price": "5.00",
+              "sub_priced_on": "2012-07-18 18:35:54.050883-05",
+              "sub_canceled_on": null,
+              "sub_expires_on": null,
+              "sub_expired_on": null,
+              "sub_renewed_on": "2013-03-18 17:35:54.051223-05",
+              "sub_activated_on": "2012-07-18 18:35:54.050883-05",
+              "edate": "2012-07-18 18:46:29.232158-05",
+              "cdate": "2012-07-18 18:35:54.050883-05"
+              }]
+      },
+      "result": "success",
+      "msg": null
+    }
+  },
+  {
+    "scope": "https://api.cloudflare.com",
+    "method": "POST",
+    "path": "/host-gw.html",
+    "body": {
+      "host_key": "testkey",
+      "act": "full_zone_set",
+      "zone_name": "example.com",
+      "user_key": "11111111111111111111111111111111"
+    },
+    "status": 200,
+    "response": {
+      "request": {
+          "act": "full_zone_set"
+      },
+      "result": "error",
+      "msg": "User with user_key '11111111111111111111111111111111' does not exist.",
+      "err_code": 125
+    }
+  },
+  {
+    "scope": "https://api.cloudflare.com",
+    "method": "POST",
+    "path": "/host-gw.html",
+    "body": {
+      "act": "full_zone_set",
+      "host_key": "testkey",
+      "zone_name": "error",
+      "user_key": "11111111111111111111111111111111"
+    },
+    "status": 500,
+    "response": {
+    }
+  }
+]
